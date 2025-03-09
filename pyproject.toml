@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ea"
+version = "0.1.0"
+description = ""
+authors = ["Hatim <148957837+blilet@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.43.1"
+scipy = "^1.15.2"
+plotly = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
