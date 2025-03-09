@@ -16,4 +16,6 @@ st.markdown(
 st.markdown(
     r"$$\blacktriangleright$$ La dernière page permet de simuler une trajectoire de variance ainsi que le contrôle optimale."
 )
+st.write("Comme l'application est déployée en ligne gratuitement, veuillez garder le nombre de simulation au dessous de 10000.")
+
 st.write("Par XU Zhenyu, BLILET Hatim, QRICIHI ANIBA Adam sous encadrement de M. Nicolas Baradel.")
