@@ -78,10 +78,10 @@ else:
         Y[0, :] = Y0
         V[0, :] = V0
         X[0, :] = X0
-
+        bn = np.sqrt(st.session_state.dt)
         for t in range(N_t - 1):
             V[t + 1, :] = V[t, :] - a * (V[t, :] - sigma2) * dt + ksi * np.sqrt(V[t, :]) * (
-                        rho * np.random.randn(N) + np.sqrt(1 - rho ** 2) * np.random.randn(N))
+                        rho * np.random.normal(loc=0, scale=bn, size=N) + np.sqrt(1 - rho ** 2) * np.random.normal(loc=0, scale=bn, size=N))
             V[t + 1, :] = np.clip(V[t + 1, :], np.min(V_grid), np.max(V_grid))
 
             v_interp = interp.interp1d(V_grid, st.session_state.control_opt[t], fill_value="extrapolate")
