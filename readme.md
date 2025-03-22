@@ -1,3 +1,3 @@
 Projet de recherche - 3A à l'X
 
-[Lien vers application streamlit](ea-ctrl-sto.streamlit.app)
+[Lien vers application streamlit](https:://ea-ctrl-sto.streamlit.app)
